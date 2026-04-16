@@ -1,0 +1,32 @@
+#main>ul {
+	width: 100%;
+	gap: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+}
+
+#main>ul>li {
+	box-shadow: 1px 1px 1px 2px;
+	padding: 1.5rem;
+	flex: 1 1 calc(33.33% - 1rem);
+	min-height: max-content;
+}
+
+
+#main>ul>li>ul>li {
+	display: inline-block;
+	width: max-content;
+}
+
+@media screen and (max-width:900px) {
+	#main>ul>li {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:500px) {
+	#main>ul>li {
+		width: 100%;
+	}
+}
