@@ -1,0 +1,15 @@
+
+      #main {
+        display: flex;
+      }
+      #main > img{
+        border: 5px solid white;
+        border-radius: 14px;
+        box-shadow: 1px 1px 1px 1px rgba(200, 200, 200, 0.5);
+      }
+      .des{
+        padding: 1rem;
+      }
+      .des p{
+        line-height: 2rem;
+      }
