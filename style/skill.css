@@ -101,7 +101,7 @@ color: var(--primart);
     cursor: pointer;
 }
 .imgg{
-    width: 90%;
+    width: 50%;
     height: auto;
 }
 .imgg > img{
