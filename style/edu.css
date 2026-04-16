@@ -1,0 +1,15 @@
+fieldset{
+	margin-top: 1rem;
+	width: 100%;
+	border: 2px dashed black;
+}
+table{
+	padding: 1rem;
+	width: 100%;
+}
+tr > td{
+	padding: 0.5rem;
+}
+#main{
+	margin-bottom: 3rem;
+}

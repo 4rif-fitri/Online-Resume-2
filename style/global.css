@@ -5,7 +5,7 @@
   }
 
   :root {
-    --primart: blue;
+    --primart: rgb(41, 98, 255);
   }
 
   html {
@@ -139,12 +139,18 @@
     color: var(--primart);
     font-size: 2rem;
     text-align: center;
-    margin: 1rem 0;
     position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(190, 190, 190, 1);
+    padding: 0.5rem;
+  }
+
+  .border{
+    box-shadow: 1px 1px 1px 1px rgba(190, 190, 190, 1);
   }
 
   main>section>article>header>h1::before {
     content: "";
+    border-radius: 14px;
     position: absolute;
     height: 100%;
     width: 0.3rem;
