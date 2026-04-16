@@ -7,7 +7,9 @@
   :root {
     --primart: rgb(41, 98, 255);
   }
-
+.biru{
+  color: var(--primart);
+}
   html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
