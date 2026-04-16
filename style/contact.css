@@ -1,0 +1,58 @@
+fieldset {
+	margin: 1rem 0;
+	padding: 1rem;
+	border: 2px dashed black;
+	width: 100%;
+}
+
+table {
+	width: 100%;
+}
+
+table tr {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0;
+}
+
+td {
+	display: flex;
+	gap: 1rem;
+}
+
+td>input,
+td>select,
+td>textarea {
+	width: 100%;
+	padding: .5rem;
+}
+
+.btn-submit{
+	all: unset;
+	padding: 0.5rem 1rem;
+	background-color: rgba(144, 238, 144,0.5);
+	border-radius: 10px;
+	transition: all 0.2s ease;
+}
+.btn-submit:hover{
+	background-color: rgba(144, 238, 144, 1);
+}
+.btn-clear {
+	all: unset;
+	padding: 0.5rem 1rem;
+	background-color: rgba(238, 144, 144, 0.5);
+	border-radius: 10px;
+	transition: all 0.2s ease;
+}
+
+.btn-clear:hover {
+	background-color: rgba(238, 144, 144, 1);
+}
+
+@media screen and (width > 500px) {
+	table tr {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 1rem;
+	}
+}

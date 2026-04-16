@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Online Resume</title>
 	<link rel="stylesheet" href="./style/global.css">
+	<link rel="stylesheet" href="./style/contact.css">
 </head>
 
 <body>
@@ -60,109 +61,123 @@
 						<h1>Contact Me</h1>
 					</header>
 					<div id="main">
-						<h2>Plese add your contact details here.</h2>
 
 						<form action="./" method="GET">
+							<fieldset>
+								<legend>
+									<h2>Plese add your contact details here</h2>
+								</legend>
+								<table>
+									<tr>
+										<td>
+											<label for="name">Name: </label>
+										</td>
+										<td>
+											<input required placeholder="Your Full Name" type="text"
+												name="name" id="name">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="age">Age: </label>
+										</td>
+										<td>
+											<input required placeholder="Your Age" type="number" name="age"
+												id="age">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="dob">Date of Birth: </label>
+										</td>
+										<td>
+											<input required type="date" name="dob" id="dob">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="phoneNumber">Mobile Number: </label>
+										</td>
+										<td>
+											<input required placeholder="01x-xxx-xxxx" type="number"
+												name="phoneNumber" id="phoneNumber">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="country">Country: </label>
+										</td>
+										<td>
+											<select required name="country" id="country">
+												<option value="Select" selected disabled>Select country
+												</option>
+												<option value="malaysia">Malaysia</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="gender">Gender: </label>
+										</td>
+										<td>
+											<label for="male">
+											<input required type="radio" name="gender" id="male"
+												value="Male">
+												Male
+											</label>
+											<label for="female">
+											<input type="radio" name="gender" id="female" value="Female">
+												Female
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="email">Email: </label>
+										</td>
+										<td>
+											<input required placeholder="Email" type="email" name="email"
+												id="email">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="company">Personal / Company Website : </label>
+										</td>
+										<td>
+											<input required placeholder="Your Website" type="url"
+												name="company" id="company">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="method">Preferred method of contact : </label>
+										</td>
+										<td>
+											<label for="phone">
+												<input type="checkbox" name="method" id="phone">
+												Phone
+											</label>
+											<label for="email2">
+											<input type="checkbox" name="method" id="email2">
+												Email
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="message">Message : </label>
+										</td>
+										<td>
+											<textarea required placeholder="Type your message here...~"
+												name="message" id="message" cols="40" rows="5"></textarea>
+										</td>
+									</tr>
+								</table>
 
-							<table width="60%">
-								<tr>
-									<td>
-										<label for="name">Name: </label>
-									</td>
-									<td>
-										<input required placeholder="Your Full Name" type="text" name="name"
-											id="name">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for="age">Age: </label>
-									</td>
-									<td>
-										<input required placeholder="Your Age" type="number" name="age"
-											id="age">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for="dob">Date of Birth: </label>
-									</td>
-									<td>
-										<input required type="date" name="dob" id="dob">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for="phoneNumber">Mobile Number: </label>
-									</td>
-									<td>
-										<input required placeholder="01x-xxx-xxxx" type="number"
-											name="phoneNumber" id="phoneNumber">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for="country">Country: </label>
-									</td>
-									<td>
-										<select required name="country" id="country">
-											<option value="Select" selected disabled>Select country</option>
-											<option value="malaysia">Malaysia</option>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for="gender">Gender: </label>
-									</td>
-									<td>
-										<input required type="radio" name="gender" id="male" value="Male">
-										<label for="male">Male</label>
-										<input type="radio" name="gender" id="female" value="Female">
-										<label for="female">Female</label>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for="email">Email: </label>
-									</td>
-									<td>
-										<input required placeholder="Email" type="email" name="email"
-											id="email">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for="company">Personal / Company Website : </label>
-									</td>
-									<td>
-										<input required placeholder="Your Website" type="url" name="company"
-											id="company">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for="method">Preferred method of contact : </label>
-									</td>
-									<td>
-										<input type="checkbox" name="method" id="phone">
-										<label for="phone">Phone</label>
-										<input type="checkbox" name="method" id="email2">
-										<label for="email2">Email</label>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label for="message">Message : </label>
-									</td>
-									<td>
-										<textarea required placeholder="Type your message here...~"
-											name="message" id="message" cols="40" rows="5"></textarea>
-									</td>
-								</tr>
-							</table>
-							<button type="submit">Submit Form</button>
-							<button type="reset">Clear Form</button>
+								<button class="btn-submit" type="submit">Submit Form</button>
+								<button class="btn-clear" type="reset">Clear Form</button>
+							</fieldset>
 						</form>
 
 					</div>
